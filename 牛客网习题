@@ -1,0 +1,23 @@
+有以下程序运行结果为:
+
+#include <iostream>
+using namespace std;
+char fun(char x, char y) {
+    if (x < y)
+        return x;
+    return y;
+}
+int main() {
+    int a = '1', b = '1', c = '2';
+    cout << fun(fun(a, b), fun(b, c));
+    return 0;
+}
+A
+运行出错
+B
+2
+C
+3
+D
+1
+正确答案：D
